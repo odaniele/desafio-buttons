@@ -1,103 +1,70 @@
-# desafio-buttons
+# Getting Started with Create React App
 
-### Desafio React: Criar um Componente de Botão com Vários Estados
-Seu objetivo é criar um componente de botão em React com os seguintes estados:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-https://github.com/campinho-digital/desafio-buttons/assets/108235987/e7d3e948-735b-492f-9ecf-8ac5bec89d12
+## Available Scripts
 
-Normal: O estado padrão do botão.
+In the project directory, you can run:
 
-Loading: O botão entra em um estado de carregamento quando estiver processando alguma ação.
+### `npm start`
 
-Desativado: O botão fica desativado e não pode ser clicado.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Selecionado: O botão muda seu estilo quando estiver selecionado.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
-Passos:
-1 - Crie um novo projeto React usando create-react-app (ou qualquer método que preferir).
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-2 - No componente principal (App.js), crie um estado para gerenciar o seu botão.
+### `npm run build`
 
-3 - Crie um componente de botão (Button.jsx) que receba props para o valor e a função de mudança.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-4 - No componente principal (App), utilize o Button e passe as props necessárias.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Sua estrutura de arquivos deverá ser assim:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-~~~
-src/
-|-- components/
-|   |-- Button
-|   |-- |-- Button.jsx
-|   |-- |-- Button.css
-|-- App.js
-|-- index.js
-~~~
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## O `src/components/Button.jsx`
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-~~~
-import React from 'react';
-import './Button.css';
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-const Button = ({ loading, disabled, selected, onClick, onToggleDisable, onToggleSelected }) => {
-  return (
-  //seu código
-  );
-};
+## Learn More
 
-export default Button;
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-~~~
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## O `src/components/Button.css`
+### Code Splitting
 
-~~~
-.button-container {
-    //código
-  }
-  
-.button {
-   //código
-  }  
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-~~~
+### Analyzing the Bundle Size
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## O `src/App.js`
-~~~
-import React, { useState } from 'react';
-import Button from './Button';
+### Making a Progressive Web App
 
-function App() {
-  const handleClick = () => {
-    // Simular uma ação de carregamento
-  };
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-//outras lógicas
+### Advanced Configuration
 
-  return (
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-  <div>
-      <h1>Meu App</h1>
-      <Button
-        loading={loading}
-        disabled={disabled}
-        selected={selected}
-        onClick={handleClick}
-        onToggleDisable={handleToggleDisable}
-        onToggleSelected={handleToggleSelected}
-      />
-    </div>
-  );
-}
+### Deployment
 
-export default App;
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-~~~
+### `npm run build` fails to minify
 
-
-Os dumbs Components: https://medium.com/@adson.martins982/smart-e-dumb-components-maximizando-a-efici%C3%AAncia-do-desenvolvimento-front-end-817acd6f36f1
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
